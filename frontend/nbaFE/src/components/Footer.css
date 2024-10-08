@@ -1,0 +1,33 @@
+
+
+.footer {
+    background-color: #3b6bdd; /* Dark background color */
+    color: white;
+    padding: 15px 0; 
+    text-align: center; 
+  }
+  
+  .footer-content {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: #ffffff; 
+    text-decoration: none; 
+    margin: 0 15px; 
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+   text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    padding-top: 1px; 
+  }
+  

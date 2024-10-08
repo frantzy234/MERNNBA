@@ -1,0 +1,60 @@
+.upcomingGames {
+    display: flex; 
+    align-items: center; 
+    padding: 5px; 
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd; 
+}
+
+.gamesContainer {
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    margin-left: 55px; 
+}
+
+.gameItem {
+    min-width: 120px; 
+    padding: 1px; 
+    margin-right: 14px; 
+    text-align: center; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); 
+    font-size: 12.5px; 
+    transition: transform 0.2s; 
+}
+
+.gameItem span {
+    display: block; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+.teamLogo {
+    width: 30px; 
+    height: auto; 
+    margin-right: 3px; 
+}
+
+.gameItem:hover {
+    transform: scale(1.05); 
+}
+
+
+
+
+.btnHome {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+}
+
+.btnHome:hover {
+    background-color: #0056b3; 
+}
+
+.btnHome:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5); 
+}
