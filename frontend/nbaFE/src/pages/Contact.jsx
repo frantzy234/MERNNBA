@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css'; 
+import image7 from './../assets/iverson.gif'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -22,11 +23,12 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contactContainer">
       <h1>Contact Us</h1>
       <p>We’d love to hear from you! Please fill out the form below.</p>
       
-      <form onSubmit={handleSubmit} className="contact-form">
+    
+      <form onSubmit={handleSubmit} className="contactForm">
         <input
           type="text"
           name="name"
@@ -53,14 +55,13 @@ function Contact() {
         <button type="submit">Send Message</button>
       </form>
 
-      <div className="contact-info">
+      <div className="contactInfo">
         <h3>Contact Information</h3>
-        <p>Email: contact@yourwebsite.com</p>
+        <p>Email: PlayerPulse@ppsupport.com</p>
         <p>Phone: (123) 456-7890</p> 
       </div>
 
-  
-      <div className="support-links">
+      <div className="supportLinks">
         <h3>Support Links</h3>
         <ul>
           <li>
@@ -69,7 +70,7 @@ function Contact() {
             </a>
           </li>
           <li>
-         <a href="https://twitter.com/NBASTORESupport" target="" rel="">Twitter@NBASTORESupport</a>
+            <a href="https://twitter.com/NBASTORESupport" target="" rel="">Twitter@NBASTORESupport</a>
           </li>
           <li>
             <a href="https://store.nba.com/help/chat/return" target="" rel="">
@@ -83,12 +84,19 @@ function Contact() {
           </li>
         </ul>
       </div>
+
+        
+  <div className="gifContainer">
+  <img src={image7} alt="A fun GIF" className="contactGif" />
+</div>
+
       
     </div>
-    
   );
   
 }
+
+
 
 
 export default Contact;

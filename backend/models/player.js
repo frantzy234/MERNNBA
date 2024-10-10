@@ -12,7 +12,8 @@ const playerSchema = new mongoose.Schema({
     BPG: Number,
     SPG: Number, 
     FGP: Number,
-    imageurl: String
+    imageurl: String,
+    isDreamTeam: Boolean, 
 })
 
 const Player = mongoose.model("Player", playerSchema)

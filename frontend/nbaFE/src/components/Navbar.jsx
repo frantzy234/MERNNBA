@@ -12,7 +12,14 @@ function Navbar() {
     <nav>
      
      <Link to="/"className='title'>
-     PlayerPulse
+
+   
+     Above The Rim 
+     <img 
+           src="https://cdn2.iconfinder.com/data/icons/basketball-equipment-4/500/anm238_16_basketball_throw_goal-512.png" 
+                  alt="Basketball Icon" 
+                  className="logoIcon" 
+                />
      </Link> 
      <div className="menu"
       onClick={() => {
@@ -36,7 +43,7 @@ function Navbar() {
           <NavLink to="/contact">Contact</NavLink>
         </li>
         <li>
-          <NavLink to="/player-stats">Player Statistics</NavLink>
+          <NavLink to="/player-stats">The Starting Five</NavLink>
         </li>
         </ul>
       

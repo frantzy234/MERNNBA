@@ -30,7 +30,7 @@ function Login() {
                 });
                 toast.success('Login Successful. Welcome!');
                 console.log("Navigating to home page..."); 
-                navigate('/');
+                navigate('/dashboard');
             }
         } catch (error) {
             console.error("Login error:", error);
@@ -39,9 +39,9 @@ function Login() {
     };
 
     return (
-        <div className="login-container">
+        <div className="loginContainer">
             <h2>Login</h2>
-            <form onSubmit={loginUser} className="login-form">
+            <form onSubmit={loginUser} className="loginForm">
                 <label>Email</label>
                 <input
                     type='email'

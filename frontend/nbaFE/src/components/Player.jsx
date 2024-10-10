@@ -1,18 +1,18 @@
 import React from 'react';
 import './Player.css';
 
-function Player({ info, onSelect, selectedPlayers }) {
+function Player({ info, onSelect, selectedPlayers = [] }) { // Frantzy Remember this is an empty arrany
   return (
-    <div className="player-cards">
+    <div className="playerCards">
       <h1>Player Statistics</h1>
-      <div className="card-container">
+      <div className="cardContainer">
         {info.length > 0 ? (
           info.map((player) => (
-            <div className={`player-card ${selectedPlayers.includes(player._id) ? 'selected' : ''}`} key={player._id}>
-              <img src={player.imageurl} alt={player.name} className="player-image" />
+            <div className={`playerCard ${selectedPlayers.includes(player._id) ? 'selected' : ''}`} key={player._id}>
+              <img src={player.imageurl} alt={player.name} className="playerImage" />
               <h2>{player.name}</h2>
               <p>Team: {player.team}</p>
-              <p>Position: {player.position}</p> {/* Show Player Position */}
+              <p>Position: {player.position}</p>
               <p>Jersey Number: {player.jerseyNumber}</p>
               <p>Championships: {player.championships}</p>
               <p>PPG: {player.PPG}</p>
@@ -25,7 +25,7 @@ function Player({ info, onSelect, selectedPlayers }) {
                 type="checkbox"
                 checked={selectedPlayers.includes(player._id)}
                 onChange={() => onSelect(player._id)}
-                className="player-checkbox"
+                className="playerCheckbox"
               />
             </div>
           ))

@@ -35,9 +35,9 @@ function Register() {
     };
 
     return (
-        <div className="login-container"> 
+        <div className="loginContainer"> 
             <h2>Register</h2>
-            <form onSubmit={registerUser} className="login-form"> 
+            <form onSubmit={registerUser} className="loginForm"> 
                 <label>Name</label>
                 <input
                     type='text'

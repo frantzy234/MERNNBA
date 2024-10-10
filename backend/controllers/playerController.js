@@ -6,9 +6,16 @@ const Player = require ('../models/player')
 
 
 const fetchPlayers = async (req,res) => {
-    const players = await Player.find()
-    res.json({players: players})
- 
+    try {
+        const { isDreamTeam } = req.query; 
+        const filter = isDreamTeam ? { isDreamTeam: true } : {}; 
+
+        const players = await Player.find(filter); 
+        res.json({ players });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: err.message });
+    }
 
 }
 

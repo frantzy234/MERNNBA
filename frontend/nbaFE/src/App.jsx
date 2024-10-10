@@ -4,13 +4,14 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-
+import { UserContextProvider } from '../context/userContext';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import { Toaster } from 'react-hot-toast'
 import PlayerStats from './pages/PlayerStats';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import Dashboard from './pages/Dashboard';
 
 
 axios.defaults.baseURL = 'http://localhost:3000';
@@ -23,13 +24,13 @@ function App() {
 
 
   return (
-    <>
+    <UserContextProvider>
 <div className="App">
 
 
   
   <Navbar />
-  <Toaster position='bottom-right' toastOptions={{duration: 7000}} />
+  <Toaster position='bottom-right' toastOptions={{duration: 6000}} />
 
 
 
@@ -37,6 +38,7 @@ function App() {
   <Route path="/" element={<Home />}  />
   <Route path="/register" element={<Register />}  />
   <Route path="/login" element={<Login />}  />
+  <Route path="/dashboard" element={<Dashboard />}  />
   <Route path="/contact" element={<Contact />}  />
   <Route path="/player-stats" element={<PlayerStats />} /> 
 
@@ -45,7 +47,7 @@ function App() {
 
 
 
-    </>
+</UserContextProvider>
   );
 }
 

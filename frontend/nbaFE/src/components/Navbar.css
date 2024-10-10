@@ -2,26 +2,27 @@
     background-color: #1d4ed8;
 }
 
-nav{
+nav {
     display: flex;
-    position: f;
     justify-content: space-between;
     align-items: center;
-    background-color: #255cdb;
-    position: sticky;
-    top: 0;
+    background-color: #255cdb; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    padding: 0.5rem 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 
 
-nav .title{
-    font-size: 1.5rem;
-    margin: 1rem;
+nav .title {
+    font-size: 1.5rem; 
     font-weight: bold;
     text-decoration: none;
-    color: white;
-
+    color: white; 
 }
+
 
 nav ul{
     display: flex;
@@ -35,9 +36,10 @@ nav ul li{
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    color: white; 
+    padding: 0.5rem 1rem; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease; 
 }
 
 nav ul li a:not(.active):hover {
@@ -69,31 +71,40 @@ nav .menu span {
     border-radius: 0.2rem;
 }
 
-
 @media (max-width: 480px) {
     nav .menu {
-        display: flex;
-
+        display: flex; 
     }
+
     nav {
-        flex-direction: column;
-        align-items: start;
+        flex-direction: column; 
+        align-items: stretch; 
     }
 
     nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0.25rem;
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        margin-bottom: 0.25rem; 
+    }
+
+    nav ul.open {
+        display: flex; 
     }
 
     nav ul li {
         width: 100%;
-        text-align: center;
+        text-align: center; 
     }
 
     nav ul li a {
-        margin: 0.2rem 0.5rem;
+        margin: 0.2rem 0; 
+        padding: 0.5rem;
     }
+}
 
+.logoIcon {
+    width: 35px; 
+    height: auto; 
+    margin-left: 10px; 
 }

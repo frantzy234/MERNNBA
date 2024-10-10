@@ -1,17 +1,17 @@
-.player-cards {
+.playerCards {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
   }
   
-  .card-container {
+  .cardContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; 
     justify-content: center; 
   }
   
-  .player-card {
+  .playerCard {
     background-color: #5199d0; 
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
@@ -21,19 +21,25 @@
     transition: transform 0.2s; 
   }
   
-  .player-card:hover {
+  .playerCard:hover {
     transform: scale(1.05); 
   }
   
-  .player-image {
+  .playerImage {
     width: 100%; 
     height: auto; 
     border-radius: 5px; 
   }
+
+  .playerCheckbox {
+    margin-top: 10px; 
+  }
+  
   
   h2 {
     font-size: 1.25rem; 
     margin: 5px 0; 
+    text-align: center;
   }
   
   p {
@@ -44,7 +50,7 @@
 
 
 
-.starting-five {
+.startingFive {
     margin-top: 20px;
     padding: 20px;
     background-color: #f0f0f0; 
@@ -53,45 +59,120 @@
     text-align: left;
   }
   
-  .starting-five h2 {
+  .startingFive h2 {
     margin-bottom: 10px;
   }
   
-  .starting-five-players {
-    display: flex; 
-    flex-wrap: wrap; 
-  }
+  .startingFivePlayers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
   
-  .starting-five-player {
-    display: flex; 
-    align-items: center; 
-    margin: 10px; 
-  }
+.startingFivePlayer {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #6aa8f2;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.startingFivePlayer:hover {
+    transform: scale(1.02);
+}
+
+.startingFiveImage {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
   
-  .starting-five-image {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    margin-right: 10px; 
-  }
-  
-  .starting-five-player h4 {
+  .startingFivePlayer h4 {
     margin: 0; 
   }
   
-  .starting-five-player p {
+  .startingFivePlayer p {
     margin: 0; 
     font-size: 0.9em; 
   }
   
 
-  .player-card.selected {
+  .playerCard.selected {
     background-color: #508c93; 
   }
 
-  .player-checkbox {
-    margin-top: 10px; 
-  }
-  
 
-  
+
+ .teamPlayerImage {
+  width: 60px; 
+  height: auto; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+}
+
+.startingFiveImage {
+  width: 80px; 
+  height: auto; 
+  border-radius: 5px; 
+  margin-right: 10px; 
+}
+
+
+
+
+.filterButtons button {
+    margin: 2px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filterButtons button.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.filterButtons button:hover:not(.active) {
+    background-color: #f0f0f0;
+}
+
+
+
+
+.savedTeams {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.savedTeam {
+    background-color: #e7f3fe;
+    border: 1px solid #bee5eb;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.playerList {
+   
+    padding: 0;
+}
+
+.playerItem {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+
+
+

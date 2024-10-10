@@ -1,31 +1,29 @@
-/* Contact.css */
-.contact-container {
+.contactContainer {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    height: 55vh; 
+    height: 75vh; 
     max-width: 600px; 
-    margin: auto; 
+    margin: 100px auto 0; /* Add top margin for spacing */
     padding: 30px;
     background-color: #f8f9fa; 
     border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 10px 5px rgb(67, 123, 213); 
 }
-
 h1 {
     color: #333; 
     margin-bottom: 20px;
 }
 
-.contact-form {
+.contactForm {
     display: flex;
     flex-direction: column;
     width: 100%; 
 }
 
-.contact-form input,
-.contact-form textarea {
+.contactForm input,
+.contactForm textarea {
     margin-bottom: 15px; 
     padding: 12px; 
     border: 1px solid #ddd; 
@@ -35,7 +33,7 @@ h1 {
     box-sizing: border-box; 
 }
 
-.contact-form button {
+.contactForm button {
     padding: 12px;
     background-color: #007bff; 
     border: none; 
@@ -44,15 +42,15 @@ h1 {
     font-size: 20px; 
 }
 
-.contact-form button:hover {
+.contactForm button:hover {
     background-color: #0056b3; 
 }
 
-.contact-info {
+.contactInfo {
     margin-top: 30px; 
 }
 
-.contact-info h3 {
+.contactInfo h3 {
     margin-bottom: 10px; 
     text-align: center; 
 }
@@ -68,16 +66,30 @@ p{
 
 
 
-.support-links {
+.supportLinks {
     margin-top: 20px; 
 }
 
 
-.support-links a {
+.supportLinks a {
     color: #2e7cce; 
     text-decoration: none; 
 }
 
-.support-links a:hover {
+.supportLinks a:hover {
     text-decoration: underline; 
 }
+
+  
+  .gifContainer {
+    text-align: center; 
+    margin: 20px 0; 
+  }
+  
+  .contactGif {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 2px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

@@ -18,6 +18,7 @@ const UpcomingGames = () => {
             { teamA: 'CHI', teamB: 'NOP', time: '8:00 PM', logoA: 'https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg', logoB: 'https://cdn.nba.com/logos/nba/1610612740/primary/L/logo.svg' },
             { teamA: 'MEM', teamB: 'UTA', time: '9:00 PM', logoA: 'https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg', logoB: 'https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg' },
             { teamA: 'PHX', teamB: 'LAC', time: '10:00 PM', logoA: 'https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg', logoB: 'https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg' },
+            { teamA: 'GSW', teamB: 'POR', time: '10:00 PM', logoA: 'https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg', logoB: 'https://cdn.nba.com/logos/nba/1610612757/primary/L/logo.svg' }
         ],
     };
 
